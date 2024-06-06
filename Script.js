@@ -8,7 +8,6 @@ function getRandomColor() {
 }
 
 var circle = document.querySelector('.logo');
-
 circle.style.backgroundColor = getRandomColor();
 
 var clickCount = 0;
@@ -19,11 +18,9 @@ circle.addEventListener('click', function() {
     var currentColor = circle.style.backgroundColor;
 
     if (clickCount < 9) {
-
         var rgb = currentColor.substring(4, currentColor.length - 1).split(',').map(function(value) {
             return parseInt(value);
         });
-
 
         rgb[0] -= 20;
         rgb[1] -= 20;
@@ -34,10 +31,8 @@ circle.addEventListener('click', function() {
         });
 
         var newColor = 'rgb(' + rgb.join(',') + ')';
-
         circle.style.backgroundColor = newColor;
     } else {
-
         circle.style.backgroundColor = '#000000';
     }
 });
