@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.header {
+    background-color: #4AB87B;
+    height: 10%;
+    width: 100%;
+}
+.logo {
+    background-color: #D45253;
+    width: 10vw; 
+    height: 10vw;
+    max-width: 100px; 
+    max-height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%; 
+    left: 13%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+.body {
+    background-color: white;
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner {
+    width: 90%;
+    height: 83%;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    display: flex;
+}
+.slideshow {
+    background-color: #58A6D1;
+    width: 72%;
+    height: 100%;
+}
+.container {
+    width: calc(30% - 4%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2%;
+}
+.box {
+    background-color: #8567AD;
+    width: 100%;
+}
+.box:nth-child(1) {
+    height: 45%;
+}
+.box:nth-child(2) {
+    height: 52%;
+}
+.footer {
+    height: 25%;
+    width: 100%;
+    position: relative;
+}
+.footer-section {
+    background-color: #79B875;
+    width: 90%;
+    height: 52%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
